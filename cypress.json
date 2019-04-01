@@ -1,0 +1,12 @@
+{
+    "env": {
+        "default": {
+            "lastname": "Покупатель",
+            "telephone": "0631543448",
+            "password": "12345",
+            "confirmpassword": "12345",
+            "city": "Kharkiv",
+            "department": "42"
+        }
+    }
+}
