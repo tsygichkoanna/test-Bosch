@@ -246,9 +246,11 @@ describe('Testbasket', function () {
 
     cy.get('#cod')
       .click()
+      .wait(2000)
 
     cy.get('#simplecheckout_button_confirm')
       .click()
+      .wait(2000)
 
     cy.contains('Ваш заказ сформирован')
   })
