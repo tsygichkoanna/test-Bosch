@@ -211,4 +211,46 @@ describe('Testbasket', function () {
     cy.contains('Ваш заказ сформирован')
   })
 
+  it.only('NEW TEST BUY', function () {
+    cy.visit('http://bosch.perets-ace.com/')
+
+    cy.contains('Сверло алмазное ADTnS DDS-W 068x70-4xSDS+ DLD 068 CS-X')
+      .click()
+
+    cy.contains('КУПИТЬ')
+      .click()
+
+    cy.get('#basket')
+      .click()
+
+    cy.get('.cart')
+      .click()
+
+    cy.contains('ОФОРМИТЬ ЗАКАЗ')
+      .click()
+
+    cy.get('#customer_lastname')
+      .type(newUserName)
+
+    cy.get('#customer_firstname')
+      .type(newUserName)
+
+    cy.get('#customer_email')
+      .type(data.email)
+
+    cy.get('#customer_telephone')
+      .type(data.telephone)
+
+    cy.contains('Самовывоз')
+      .click()
+
+    cy.get('#cod')
+      .click()
+
+    cy.get('#simplecheckout_button_confirm')
+      .click()
+
+    cy.contains('Ваш заказ сформирован')
+  })
+
 })
