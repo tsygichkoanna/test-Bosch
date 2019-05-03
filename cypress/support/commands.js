@@ -1,5 +1,5 @@
 Cypress.Commands.add('deleteUser', (data) => {
-    cy.visit('http://bosch.perets-ace.com/admin')
+    cy.visit('http://instrumentarium.com.ua/')
 
     cy.get('#input-username')
         .type('admin')

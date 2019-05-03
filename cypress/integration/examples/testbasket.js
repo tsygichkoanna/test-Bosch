@@ -6,7 +6,7 @@ describe('Testbasket', function () {
   data.email = `t${Date.now()}@mailforspam.com`
 
   it('NP cashless payments', function () {
-    cy.visit('http://bosch.perets-ace.com/')
+    cy.visit('http://instrumentarium.com.ua/')
 
     cy.contains('Купить')
       .click()
@@ -25,7 +25,7 @@ describe('Testbasket', function () {
       .type(newUserName)
 
     cy.get('#customer_firstname')
-      .type(data.firstname)
+      .type(newUserName)
 
     cy.get('#customer_email')
       .type(data.email)
@@ -46,7 +46,7 @@ describe('Testbasket', function () {
   })
 
   it('NP Privat Bank', function () {
-    cy.visit('http://bosch.perets-ace.com/')
+    cy.visit('http://instrumentarium.com.ua/')
 
     cy.contains('Купить')
       .click()
@@ -89,7 +89,7 @@ describe('Testbasket', function () {
   })
 
   it('NP Payment upon receipt at the office', function () {
-    cy.visit('http://bosch.perets-ace.com/')
+    cy.visit('http://instrumentarium.com.ua/')
 
     cy.contains('Купить')
       .click()
@@ -132,7 +132,7 @@ describe('Testbasket', function () {
   })
 
   it('non cash payment', function () {
-    cy.visit('http://bosch.perets-ace.com/')
+    cy.visit('http://instrumentarium.com.ua/')
 
     cy.contains('Купить')
       .click()
@@ -172,7 +172,7 @@ describe('Testbasket', function () {
   })
 
   it('Cash payment', function () {
-    cy.visit('http://bosch.perets-ace.com/')
+    cy.visit('http://instrumentarium.com.ua/')
 
     cy.contains('Купить')
       .click()
@@ -211,8 +211,8 @@ describe('Testbasket', function () {
     cy.contains('Ваш заказ сформирован')
   })
 
-  it.only('NEW TEST BUY', function () {
-    cy.visit('http://bosch.perets-ace.com/')
+  it('NEW TEST BUY', function () {
+    cy.visit('http://instrumentarium.com.ua/')
 
     cy.contains('Сверло алмазное ADTnS DDS-W 068x70-4xSDS+ DLD 068 CS-X')
       .click()

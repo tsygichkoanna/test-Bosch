@@ -5,13 +5,13 @@ describe('Authorization', function () {
   const data = Cypress.env('default')
     data.email = `t${Date.now()}@mailforspam.com`
 
-    afterEach(() => {
-      cy.deleteUser(data)
-    })
+    // afterEach(() => {
+    //   cy.deleteUser(data)
+    // })
 
   it('Registration', function () {
 
-    cy.visit('http://bosch.perets-ace.com/')
+    cy.visit('http://instrumentarium.com.ua/')
 
     cy.contains('Вход')
       .click()
@@ -44,9 +44,9 @@ describe('Authorization', function () {
 
   })
 
-  // it.only('Registration-email with spaces', function () {
+  // it('Registration-email with spaces', function () {
   //   data.email = `test${Date.now()}@mailforspam.com`
-  //   cy.visit('http://bosch.perets-ace.com/')
+  //   cy.visit('http://instrumentarium.com.ua/')
 
   //   cy.contains('Вход')
   //     .click()

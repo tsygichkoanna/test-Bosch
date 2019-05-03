@@ -1,7 +1,7 @@
 describe('Searctest', function () {
 
     it('Search field', function () {
-      cy.visit('http://bosch.perets-ace.com/')
+      cy.visit('http://instrumentarium.com.ua/')
 
       cy.get('[name = "search"]')
         .type('Дрель')
@@ -20,6 +20,9 @@ describe('Searctest', function () {
         .wait(2500)
         .clear()
         .type('Дрель Bosch')
+        .wait(2500)
+        .clear()
+        .type('Многофункциональный инструмент')
         .wait(2500)
         .clear()
     })
